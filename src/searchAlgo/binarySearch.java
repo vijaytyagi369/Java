@@ -1,7 +1,7 @@
 package searchAlgo;
 
 public class binarySearch {
-    int binarySearchRe(int arr[], int l, int r, int x) {
+    public static int binarySearchRe(int arr[], int l, int r, int x) {
         if (r >= l) {
             int mid = l + (r - l) / 2;
             if (arr[mid] == x)
@@ -15,7 +15,7 @@ public class binarySearch {
     public static void main(String[] args) {
         binarySearch obj=new binarySearch();
         int[] arr={1,2,3,4,5,6,70};
-        int indexOfEle= obj.binarySearchRe(arr,0,arr.length,4);
+        int indexOfEle= binarySearchRe(arr,0,arr.length,4);
         System.out.println(indexOfEle);
     }
 
